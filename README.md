@@ -8,7 +8,7 @@ some kind of swipe sliders for mobile
 
 	2>text title in every page
 
-	3>background music
+	3>background music(from listeningearth.com)
 
 2.cunstom swipe slider
 

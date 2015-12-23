@@ -41,6 +41,31 @@ var galleryTop = new Swiper('.gallery-top', {
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
 
-
-
 })
+
+/* background audio */
+var bgAudio = document.getElementById('bgAudio');
+
+$('.audioctrl').on('click','a',function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    var $this = $(this);
+    $this.toggleClass('active');
+    $this.siblings().toggleClass('active');
+    var id = $this.attr('id');
+    if(id=='mute-btn'){
+        bgAudio.play();
+    }else if(id=='play-btn'){
+        bgAudio.pause();
+    }
+});
+
+//background audio autoplay
+bgAudio.play();
+if (bgAudio.paused) {
+    $('#mute-btn').addClass('active');
+    $('#play-btn').removeClass('active');
+}else{
+    $('#mute-btn').removeClass('active');
+    $('#play-btn').addClass('active');
+};
