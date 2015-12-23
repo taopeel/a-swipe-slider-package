@@ -14,15 +14,15 @@ if(!isMobile){
 var mainSwiper = new Swiper ('#mainSlider', {
         direction: 'vertical',
         nextButton:'.nextp',
+        mousewheelControl :true,
         onSlideChangeStart:function () {
-            if(mainSwiper.activeIndex == 1){
-                $('#toSubmitPage').hide();
+            //console.log(mainSwiper.activeIndex);
+            if(mainSwiper.isEnd){
+                $('.nextp').hide();
             }else{
-                $('#toSubmitPage').show();
+                $('.nextp').show();
             }
-        },
-        noSwipingClass:'iframewrap',
-        lazyLoading:true
+        }
     })
 
 var galleryTop = new Swiper('.gallery-top', {

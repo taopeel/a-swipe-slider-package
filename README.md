@@ -21,5 +21,3 @@ some kind of swipe sliders for mobile
     1>swipe event by jquery.touchSwipe.min.js
 
     2>every page include a hidden text layer, click the button in the middle page to show the text layer, the layer use perfect-scrollbar js for long text
-
-
