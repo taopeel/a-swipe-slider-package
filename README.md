@@ -1,0 +1,1 @@
+ demo page for https://github.com/taodesign/a-swipe-slider-package/
